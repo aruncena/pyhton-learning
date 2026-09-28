@@ -1,0 +1,89 @@
+{
+  "company": {
+    "name": "CloudNova Technologies",
+    "location": "Chennai",
+    "employees": 148,
+    "is_active": true
+  },
+  "projects": [
+    {
+      "id": 101,
+      "name": "Payment Gateway",
+      "status": "production",
+      "budget": 1250000,
+      "technologies": ["Python", "AWS", "Docker", "Kubernetes"],
+      "team_size": 8,
+      "manager": {
+        "name": "Rahul",
+        "experience": 9,
+        "remote": true
+      }
+    },
+    {
+      "id": 102,
+      "name": "Customer Portal",
+      "status": "development",
+      "budget": 850000,
+      "technologies": ["Java", "React", "PostgreSQL"],
+      "team_size": 6,
+      "manager": {
+        "name": "Priya",
+        "experience": 6,
+        "remote": false
+      }
+    },
+    {
+      "id": 103,
+      "name": "Analytics Platform",
+      "status": "testing",
+      "budget": 1500000,
+      "technologies": ["Python", "Kafka", "Spark", "AWS"],
+      "team_size": 10,
+      "manager": {
+        "name": "Arun",
+        "experience": 11,
+        "remote": true
+      }
+    }
+  ],
+  "servers": [
+    {
+      "hostname": "web-01",
+      "environment": "production",
+      "ip": "10.10.1.15",
+      "cpu": 8,
+      "memory_gb": 32,
+      "services": ["nginx", "docker"],
+      "backup_enabled": true
+    },
+    {
+      "hostname": "db-01",
+      "environment": "production",
+      "ip": "10.10.2.20",
+      "cpu": 16,
+      "memory_gb": 64,
+      "services": ["postgresql"],
+      "backup_enabled": true
+    },
+    {
+      "hostname": "dev-01",
+      "environment": "development",
+      "ip": "10.10.3.25",
+      "cpu": 4,
+      "memory_gb": 16,
+      "services": ["docker", "gitlab-runner"],
+      "backup_enabled": false
+    }
+  ],
+  "deployment": {
+    "last_deployed": "2026-09-27T14:30:00",
+    "version": "v2.8.4",
+    "successful": true,
+    "rollback_version": null,
+    "deployment_tags": [
+      "production",
+      "stable",
+      "aws"
+    ]
+  }
+}
